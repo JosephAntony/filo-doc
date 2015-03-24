@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+ <head>
+ 	 <link rel="stylesheet" type="text/css" href="./orthoptio.css">
+ 	 <script type="text/javascript" src="./settings.js"></script>
+ 	 <script type="text/javascript" src="./router.js"></script>
+ 	 <script type="text/javascript" src="./validator.js"></script>
+ </head>
+ <body>
+ 	<div class="container">
+
+ 		<div class="header">
+ 			<div>
+ 				<label id="date">Date: XX::XX:XXXX HH:MM</label>
+ 			</div>
+
+ 			<div class="name">
+ 				<h3>ORTHOPTIO</h3> 
+ 			</div>	
+
+ 			<div class="loggedIn">
+ 				<label>loged in as helper</label>
+ 			</div>
+
+ 		</div>	
+
+
+
+ 		<div class="center">
+
+ 			<div class="centerHeader">
+ 				<h4>Update Patient data</h4>
+ 			</div>	
+
+
+ 		   <div class="formContainer">
+
+
+ 		   	   	
+
+ 		   			
+
+
+ 		   </div>		
+
+ 			
+
+ 		</div>
+
+
+ 		<div id="addMedicinesOverlay" class="overlay">
+ 			<div>
+ 				<div>
+ 					<h3>Add Medicines</h3>
+ 				</div>
+
+ 				<div>
+ 					<form>
+
+ 						<div>  
+ 							<select>
+ 								<option>Medicine Name dose(QTY Available)</option>
+ 								<option>Medicine Name dose(QTY Available)</option>
+ 								<option>Medicine Name dose(QTY Available)</option>
+ 								<option>Medicine Name dose(QTY Available)</option>
+ 							</select>  
+ 						</div>
+
+ 						<div>
+ 							<label>Quantity:</label>
+ 							<input type="text" />
+ 						</div>	
+
+ 						<div>
+ 							<button id="add">add</button>
+ 							<button id="done">done</button>
+ 						</div>
+ 					</form>
+ 				</div>	
+
+ 			</div>
+ 		</div>
+
+
+
+
+
+
+ 		<div id="addAppliancesOverlay" class="overlay">
+ 			<div>
+ 				<div>
+ 					<h3>Add Appliances</h3>
+ 				</div>
+
+ 				<div>
+ 					<form>
+
+ 						<div>  
+ 							<select>
+ 								<option>Appliances(QTY Available)</option>
+ 								<option>Appliances(QTY Available)</option>
+ 								<option>Appliances(QTY Available)</option>
+ 								<option>Appliances(QTY Available)</option>
+ 							</select>  
+ 						</div>
+
+ 						<div>
+ 							<label>Quantity:</label>
+ 							<input type="text" />
+ 						</div>	
+
+ 						<div>
+ 							<button id="add">add</button>
+ 							<button id="done">done</button>
+ 						</div>
+ 					</form>
+ 				</div>	
+
+ 			</div>
+ 		</div>
+
+
+
+ 			
+
+
+
+
+
+
+ 	</div>
+
+ 	
+ 	<script type="text/javascript" src="./templates.js"></script>
+ 	
+
+ 	<script type="text/javascript">
+
+ 		    filo.router.init();
+
+
+
+ 			(function(updatePatient){
+ 						var hash =  window.location.hash;
+ 						if(hash){
+ 							window.location.hash="";
+ 							window.location.hash=hash;
+ 						}else{
+ 							window.location.hash="updatePatient";
+ 						}
+ 						
+
+ 						/*var eleIDArr=[
+ 							{eleId:"update", event:"click"},
+ 							{eleId:"cancel", event:"click"}
+ 						]
+ 						updatePatient.init(eleIDArr);*/
+ 			})(filo.updatePatient)
+ 	</script>
+ </body>
+</html>

@@ -66,7 +66,7 @@
 
 	   		scriptTag.onload = callBackFunction;
 	   		scriptTag.type="text/javascript";
-	   		scriptTag.src = "./patientDetails.js";
+	   		scriptTag.src = "./patientMedicalDetails.js";
 
 	   		
 	   		document.getElementsByTagName("head")[0].appendChild(scriptTag);
